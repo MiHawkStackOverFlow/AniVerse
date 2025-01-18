@@ -1,0 +1,10 @@
+workflows:
+  - name: Code Quality Checks
+    on: pull_request
+    steps:
+      - lint: # Run a linter
+          command: npm run lint
+      - approve_if:
+          condition: |
+            check.lint.passed
+          message: "All checks passed! Approved automatically."
