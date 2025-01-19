@@ -18,7 +18,7 @@ const AnimeListPage = async () => {
   return (
     <div>
       <h1>Anime List</h1>
-      <ul>
+      <ul style={{ display: 'flex', flexWrap: 'wrap' }}>
         {animes.map((anime: Anime) => (
           <li key={anime.mal_id}>
             <AnimeCard anime={anime} />
