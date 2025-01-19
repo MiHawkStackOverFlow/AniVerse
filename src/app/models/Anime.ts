@@ -1,5 +1,5 @@
 import { Aired, Broadcast } from "./Aired";
-import { Image } from "./image";
+import { Image } from "./Image";
 import { Trailer } from "./Trailer";
 
 export interface AnimeData {
